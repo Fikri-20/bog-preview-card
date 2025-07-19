@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --color-yellow: hsl(47, 88%, 63%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-Gray-500: hsl(0, 0%, 42%);
+  --colro-Gray-950: hsl(0, 0%, 7%);
+
+  /* fonts */
+  --font-family-base: "Figtree", sans-serif;
+  --font-size-body: 16px;
+  --font-weight-medium: 500;
+  --font-weight-extrabold: 800;
+
+  /* Screens */
+  --breakpoint-mobile: 375px;
+  --breakpoint-desktop: 1440px;
+}
+
+/* Mobile-First Strategy */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-yellow);
+}
+
+main {
+  width: 327px;
+  height: 52%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-white);
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* flex: 1; */
+  border-radius: 20px;
+  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0);
+}
+
+.tag {
+  color: var(--colro-Gray-950);
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-extrabold);
+  background-color: var(--color-yellow);
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  width: 73px;
+  margin-left: 24px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+}
+
+img {
+  margin: 24px;
+  max-width: 279px;
+  border-radius: 10px;
+}
+
+time {
+  margin-left: 24px;
+  margin-bottom: 1em;
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-medium);
+  font-size: 0.75rem;
+}
+
+h1 {
+  font-family: var(--font-family-base);
+  color: var(--color-Gray-950);
+  font-weight: var(--font-weight-extrabold);
+  font-size: 1.25rem;
+  margin-left: 1.25em;
+  margin-bottom: 0.6em;
+}
+
+p {
+  font-size: 0.875rem; /* 14px */
+  margin-left: 1.71em;
+  font-family: var(--font-family-base);
+  color: var(--color-Gray-500);
+  margin-bottom: 1.71em;
+}
+
+.author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 32px;
+}
+
+.greg-photo {
+  width: 32px;
+  height: 32px;
+  margin: 0px;
+  margin-left: 24px;
+  padding: 0px;
+}
+
+.author-text {
+  font-size: 0.875rem; /* 14px */
+  margin-left: 0.85em; /* 12px */
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-extrabold);
+}
