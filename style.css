@@ -31,41 +31,48 @@ body {
 
 body {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background-color: var(--color-yellow);
 }
 
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
 main {
-  width: 327px;
-  height: 52%;
+  width: 87%;
   border: 1px solid black;
   display: flex;
   flex-direction: column;
   background-color: var(--color-white);
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* flex: 1; */
   border-radius: 20px;
   box-shadow: 8px 8px 0px 0px rgba(0, 0, 0);
+  padding-bottom: 24px;
 }
 
 .tag {
-  color: var(--colro-Gray-950);
+  display: inline-block;
+  color: var(--color-Gray-950);
   font-family: var(--font-family-base);
   font-weight: var(--font-weight-extrabold);
   background-color: var(--color-yellow);
   padding: 4px 12px;
   font-size: 0.75rem;
-  width: 73px;
-  margin-left: 24px;
+  margin: 0 auto 12px 24px;
   margin-bottom: 12px;
   border-radius: 4px;
 }
 
 img {
-  margin: 24px;
-  max-width: 279px;
+  /* margin: 24px; */
+  width: 86%;
+  margin: 24px auto;
   border-radius: 10px;
 }
 
@@ -115,3 +122,87 @@ p {
   font-family: var(--font-family-base);
   font-weight: var(--font-weight-extrabold);
 }
+
+footer {
+  font-family: var(--font-family-base);
+}
+h1:hover,
+h1:focus,
+h1:active {
+  color: var(--color-yellow);
+}
+
+/* Media Queries */
+
+@media (min-width: 400px) {
+  main {
+    width: 75%;
+  }
+}
+
+@media (min-width: 500px) {
+  main {
+    width: 65%;
+  }
+}
+
+@media (min-width: 700px) {
+  main {
+    width: 55%;
+  }
+}
+
+@media (min-width: 800px) {
+  main {
+    width: 50%;
+  }
+}
+
+@media (min-width: 900px) {
+  main {
+    width: 68%;
+  }
+}
+
+@media (min-width: 1000px) {
+  main {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1100px) {
+  main {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    width: 50%;
+  }
+}
+
+@media (min-width: 500px) {
+  .tag {
+    font-size: 0.875rem;
+  }
+
+  time {
+    font-size: 0.875rem;
+  }
+
+  h1 {
+    margin: 12;
+    font-size: 1.5rem;
+    margin-left: 1em;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+/* @media (min-width: 1300px) {
+  main {
+    width: 27%;
+  }
+} */
